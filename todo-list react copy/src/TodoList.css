@@ -1,0 +1,105 @@
+/* General body styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #2c3e50; /* Dark background */
+  color: #ecf0f1; /* Light text for contrast */
+}
+
+/* Todo container styles */
+.todo-container {
+  text-align: center;
+  width: 300px;
+  background-color: #34495e; /* Darker container background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Input field styles */
+.todo-input {
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #ecf0f1; /* Light background for input */
+  color: #2c3e50; /* Dark text for input */
+}
+
+/* Button styles */
+.todo-button {
+  padding: 8px 16px;
+  margin: 5px;
+  background-color: #1abc9c; /* Soft green for buttons */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.todo-button:hover {
+  background-color: #16a085; /* Slightly darker shade on hover */
+}
+
+/* Todo list styling */
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  margin: 5px 0;
+  background-color: #34495e; /* Darker background for list items */
+  border-radius: 5px;
+}
+
+.todo-task {
+  font-size: 16px;
+  color: #ecf0f1; /* Light text for task items */
+}
+
+.todo-item button {
+  padding: 5px 10px;
+  background-color: #e74c3c; /* Red for delete button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.todo-item button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Line-through effect for completed tasks */
+.todo-task[style] {
+  text-decoration: line-through;
+  color: #2ecc71; /* Green for completed tasks */
+}
+
+/* Styles for the Mark All As Done button */
+.todo-mark-all-button {
+  background-color: #f39c12; /* Yellow for the "Mark All As Done" button */
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+}
+
+.todo-mark-all-button:hover {
+  background-color: #e67e22; /* Darker yellow on hover */
+}
